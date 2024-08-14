@@ -5,6 +5,7 @@ class Program
 {
     static void Main()
     {
+        //Configuracion para RHINO BAR-6x
         SerialPort serialPort = new SerialPort("COM5", 9600, Parity.None, 8, StopBits.One);
         serialPort.Handshake = Handshake.None;
         serialPort.WriteTimeout = 500;
